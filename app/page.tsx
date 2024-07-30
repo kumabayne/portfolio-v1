@@ -6,43 +6,12 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import Header from "@/components/ui/header";
 
 export default function Page() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link
-          href="#"
-          className="flex items-center justify-center"
-          prefetch={false}
-        >
-          <CodeIcon className="h-6 w-6" />
-          <span className="sr-only">John Doe</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Work
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
