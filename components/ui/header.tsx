@@ -1,5 +1,6 @@
 import { CodeIcon } from "lucide-react";
 import Link from "next/link";
+import MainNav from "./main-nav";
 
 export default function Header() {
   return (
@@ -12,29 +13,7 @@ export default function Header() {
         <CodeIcon className="h-6 w-6" />
         <span className="sr-only">John Doe</span>
       </Link>
-      <nav className="ml-auto flex gap-4 sm:gap-6">
-        <Link
-          href="#"
-          className="text-sm font-medium hover:underline underline-offset-4"
-          prefetch={false}
-        >
-          Work
-        </Link>
-        <Link
-          href="#"
-          className="text-sm font-medium hover:underline underline-offset-4"
-          prefetch={false}
-        >
-          About
-        </Link>
-        <Link
-          href="#"
-          className="text-sm font-medium hover:underline underline-offset-4"
-          prefetch={false}
-        >
-          Contact
-        </Link>
-      </nav>
+      <MainNav />
     </header>
   );
 }
