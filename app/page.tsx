@@ -7,6 +7,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import Header from "@/components/ui/header";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -19,43 +20,43 @@ export default function Page() {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                 Front-End Engineer
               </h1>
-              <p className="text-muted-foreground md:text-xl">
+              <p className="text-muted md:text-xl">
                 Crafting beautiful and functional web experiences.
               </p>
               <div className="flex gap-4">
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 duration-500 ease-in-out"
                   prefetch={false}
                 >
                   View Work
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-6 text-sm font-medium shadow-sm transition-colors text-primary hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 ease-in-out duration-500"
                   prefetch={false}
                 >
                   Contact
                 </Link>
               </div>
             </div>
-            <img
-              src="/placeholder.svg"
-              width="550"
-              height="550"
-              alt="Hero"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+            <Image
+              src="/claymat-dev.png"
+              width="512"
+              height="512"
+              alt="dev coding at his desk"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
             />
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Featured Projects
                 </h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-muted-foreground">
                   Check out some of my recent web development projects.
                 </p>
               </div>
@@ -156,17 +157,17 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <img
-              src="/placeholder.svg"
-              width="550"
-              height="550"
+            <Image
+              src="/camp-avatar.png"
+              width="460"
+              height="4690"
               alt="About"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
             />
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-accent">
         <p className="text-xs text-muted-foreground">
           &copy; 2024 John Doe. All rights reserved.
         </p>
