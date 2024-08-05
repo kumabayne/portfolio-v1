@@ -6,13 +6,11 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import Header from "@/components/ui/header";
 import Image from "next/image";
 
 export default function Page() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
@@ -32,9 +30,8 @@ export default function Page() {
                   View Work
                 </Link>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-6 text-sm font-medium shadow-sm transition-colors text-primary hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 ease-in-out duration-500"
-                  prefetch={false}
                 >
                   Contact
                 </Link>
