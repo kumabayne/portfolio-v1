@@ -62,13 +62,13 @@ export default function Page() {
               <Card>
                 <Link href="#" className="group block h-full" prefetch={false}>
                   <CardHeader>
-                    <img
+                    {/* <img
                       src="/placeholder.svg"
                       width="550"
                       height="310"
                       alt="Project Thumbnail"
                       className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    />
+                    /> */}
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <CardTitle className="text-lg font-bold group-hover:underline">
@@ -83,13 +83,13 @@ export default function Page() {
               <Card>
                 <Link href="#" className="group block h-full" prefetch={false}>
                   <CardHeader>
-                    <img
+                    {/* <img
                       src="/placeholder.svg"
                       width="550"
                       height="310"
                       alt="Project Thumbnail"
                       className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    />
+                    /> */}
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <CardTitle className="text-lg font-bold group-hover:underline">
@@ -105,13 +105,13 @@ export default function Page() {
               <Card>
                 <Link href="#" className="group block h-full" prefetch={false}>
                   <CardHeader>
-                    <img
+                    {/* <img
                       src="/placeholder.svg"
                       width="550"
                       height="310"
                       alt="Project Thumbnail"
                       className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    />
+                    /> */}
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <CardTitle className="text-lg font-bold group-hover:underline">
@@ -165,45 +165,5 @@ export default function Page() {
         </section>
       </main>
     </div>
-  );
-}
-
-function CodeIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
-    </svg>
-  );
-}
-
-function XIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
   );
 }
