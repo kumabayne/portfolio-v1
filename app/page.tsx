@@ -7,6 +7,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Contact from "@/components/contact";
 
 export default function Page() {
   return (
@@ -163,6 +164,7 @@ export default function Page() {
             />
           </div>
         </section>
+        <Contact />
       </main>
     </div>
   );
