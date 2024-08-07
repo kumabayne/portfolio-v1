@@ -18,7 +18,7 @@ export default function MainNav() {
         About
       </Link>
       <Link
-        href="/contact"
+        href="#contact"
         className="text-sm font-medium hover:underline underline-offset-4"
       >
         Contact

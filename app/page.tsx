@@ -12,7 +12,7 @@ import Contact from "@/components/contact";
 export default function Page() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <main className="flex-1">
+      <main className="flex-1 scroll-smooth">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
@@ -24,14 +24,14 @@ export default function Page() {
               </p>
               <div className="flex gap-4">
                 <Link
-                  href="#"
+                  href="#work"
                   className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 duration-500 ease-in-out"
                   prefetch={false}
                 >
                   View Work
                 </Link>
                 <Link
-                  href="/contact"
+                  href="#contact"
                   className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-6 text-sm font-medium shadow-sm transition-colors text-primary hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 ease-in-out duration-500"
                 >
                   Contact
@@ -47,7 +47,7 @@ export default function Page() {
             />
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section id="work" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -128,7 +128,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

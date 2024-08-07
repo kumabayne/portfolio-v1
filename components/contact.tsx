@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
   return (
-    <section className="bg-primary w-full py-12 md:py-24 lg:py-32">
+    <section id="contact" className="bg-primary w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">

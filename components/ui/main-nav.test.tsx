@@ -30,6 +30,6 @@ describe("MainNav", () => {
     render(<MainNav />);
     const link = screen.getByRole("link", { name: "Contact" });
     expect(link).toBeDefined();
-    expect(link.getAttribute("href")).toBe("/contact");
+    expect(link.getAttribute("href")).toBe("#contact");
   });
 });
