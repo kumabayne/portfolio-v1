@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it } from "vitest";
 import { cleanup, render, screen } from "@testing-library/react";
 import MainNav from "./main-nav";
 
@@ -31,5 +31,12 @@ describe("MainNav", () => {
     const link = screen.getByRole("link", { name: "Contact" });
     expect(link).toBeDefined();
     expect(link.getAttribute("href")).toBe("#contact");
+  });
+
+  it("renders download resume link", () => {
+    render(<MainNav />);
+    const link = screen.getByRole("link", { name: "Download Resume" });
+    expect(link).toBeDefined();
+    expect(link.getAttribute("href")).toBe("/kuma-bayne_resume.pdf");
   });
 });
