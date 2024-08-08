@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Contact from "@/components/contact";
+import About from "@/components/about";
 
 export default function Page() {
   return (
@@ -128,42 +129,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                About Me
-              </h2>
-              <p className="text-muted-foreground md:text-xl">Lorem ipsum</p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-1">
-                  <h3 className="text-lg font-bold">Skills</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>React</li>
-                    <li>Lorem ipsum</li>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                  </ul>
-                </div>
-                <div className="space-y-1">
-                  <h3 className="text-lg font-bold">Experience</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>3+ years as a front-end engineer</li>
-                    <li>Worked with various startups and agencies</li>
-                    <li>Contributed to open-source projects</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <Image
-              src="/camp-avatar.png"
-              width="460"
-              height="4690"
-              alt="About"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
-            />
-          </div>
-        </section>
+        <About />
         <Contact />
       </main>
     </div>
